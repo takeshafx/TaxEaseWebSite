@@ -2,7 +2,7 @@
 
 import { ArrowRight } from 'lucide-react';
 export function Hero() {
-  return <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+  return <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-16 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-50 via-white to-white opacity-70"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -11,7 +11,7 @@ export function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center rounded-full border border-cyan-100 bg-cyan-50/50 px-3 py-1 text-sm font-medium text-cyan-600 mb-8 backdrop-blur-sm">
               <span className="flex h-2 w-2 rounded-full bg-cyan-500 mr-2 animate-pulse"></span>
-              Tax Season 2024 is Open
+              Tax Season 2026 is Open
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-8 leading-[1.1]">
@@ -37,13 +37,13 @@ export function Hero() {
               </button>
             </div>
 
-            <div className="mt-16 flex items-center justify-center lg:justify-start gap-8 text-gray-400 grayscale opacity-60">
-              {/* Simple logo placeholders for social proof */}
+            {/* <div className="mt-16 flex items-center justify-center lg:justify-start gap-8 text-gray-400 grayscale opacity-60">
+              
               <div className="h-8 w-24 bg-current rounded opacity-20"></div>
               <div className="h-8 w-24 bg-current rounded opacity-20"></div>
               <div className="h-8 w-24 bg-current rounded opacity-20"></div>
               <div className="h-8 w-24 bg-current rounded opacity-20"></div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}
@@ -58,7 +58,7 @@ export function Hero() {
                     <img className="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64" alt="User" />
                     <img className="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64" alt="User" />
                     <div className="w-8 h-8 rounded-full border-2 border-white bg-cyan-100 flex items-center justify-center text-xs font-bold text-cyan-600">
-                      +2k
+                      +10
                     </div>
                   </div>
                   <span className="text-sm font-semibold text-gray-900">
@@ -66,7 +66,7 @@ export function Hero() {
                   </span>
                 </div>
                 <p className="text-xs text-gray-500">
-                  Trusted by thousands of freelancers and businesses.
+                  Trusted freelancers and businesses.
                 </p>
               </div>
             </div>
