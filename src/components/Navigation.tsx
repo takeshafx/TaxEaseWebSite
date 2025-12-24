@@ -21,7 +21,7 @@ export function Navigation() {
               T
             </div>
             <span className="font-bold text-xl tracking-tight text-gray-900">
-              TaxFlow
+              TaxEase
             </span>
           </Link>
 
