@@ -2,7 +2,7 @@
 
 import { Navigation } from '../../src/components/Navigation';
 import { Footer } from '../../src/components/Footer';
-import { Check, FileText, Briefcase, TrendingUp, Shield, ArrowRight } from 'lucide-react';
+import { Check, FileText, Briefcase, TrendingUp, ArrowRight } from 'lucide-react';
 
 export default function ServicesPage() {
   const services = [{
