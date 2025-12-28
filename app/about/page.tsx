@@ -27,7 +27,7 @@ export default function AboutPage() {
     name: 'Bhadra Hemamali',
     role: 'Head of Tax Operations',
     bio: 'Specializes in small business taxation and complex entity structures.',
-    image: '/images/bhadra_profile.png'
+    image: '/images/Bhadra_profile.png'
   }, {
     name: 'Hashan Perera',
     role: 'Client Success Director',
