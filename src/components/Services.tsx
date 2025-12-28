@@ -3,7 +3,7 @@
 import { FileText, Calculator, TrendingUp, Shield } from 'lucide-react';
 const services = [{
   title: 'Smart Tax Filing',
-  description: 'Our AI-driven platform identifies every deduction you qualify for, ensuring you get your maximum refund.',
+  description: 'A seamless blend of technology and expertise that simplifies complex filings and keeps your business ahead of compliance deadlines.',
   icon: FileText
 }, {
   title: 'Financial Planning',
@@ -11,11 +11,11 @@ const services = [{
   icon: TrendingUp
 }, {
   title: 'Business Taxes',
-  description: 'From freelancers to LLCs, we handle complex business filings so you can focus on growth.',
+  description: 'Tax filing for self-employed individuals, freelancers, and private limited companies done accurately and on time.',
   icon: Calculator
 }, {
-  title: 'Audit Protection',
-  description: 'Rest easy knowing our team of experts will represent you fully in the unlikely event of an audit.',
+  title: 'CRA Audit Protection',
+  description: 'Support for CRA audits, reviews, and all related correspondence  handled by our experts.',
   icon: Shield
 }];
 export function Services() {

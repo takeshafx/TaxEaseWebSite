@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
@@ -17,11 +18,13 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 bg-cyan-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+            {/* <div className="h-8 w-8 bg-cyan-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
               T
-            </div>
+              
+            </div> */}
+            <Image src="/images/logo.png" alt="TaxEase Advisory Logo" width={32} height={32} className="h-8 w-auto" />
             <span className="font-bold text-xl tracking-tight text-gray-900">
-              TaxEase
+              TaxEase Advisory 
             </span>
           </Link>
 

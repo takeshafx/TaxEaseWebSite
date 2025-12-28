@@ -19,20 +19,20 @@ export default function AboutPage() {
     value: '24'
   }];
   const team = [{
-    name: 'Sarah Jenkins',
+    name: 'Vishaka Sewwandi',
     role: 'Founder & Lead CPA',
-    bio: 'Former Big 4 senior manager with 15 years of tax strategy experience.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400'
+    bio: 'Former Big 4 senior manager with 6 years of tax strategy experience.',
+    image: '/images/vishaka_profile.png'
   }, {
-    name: 'Michael Chen',
+    name: 'Bhadra Hemamali',
     role: 'Head of Tax Operations',
     bio: 'Specializes in small business taxation and complex entity structures.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400'
+    image: '/images/bhadra_profile.png'
   }, {
-    name: 'Elena Rodriguez',
+    name: 'Hashan Perera',
     role: 'Client Success Director',
     bio: 'Ensures every client receives personalized attention and support.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=400'
+    image: '/images/hashan_profile.png'
   }, {
     name: 'David Park',
     role: 'Senior Tax Analyst',

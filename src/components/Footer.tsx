@@ -11,7 +11,7 @@ export function Footer() {
               <div className="h-6 w-6 bg-gray-900 rounded flex items-center justify-center text-white font-bold text-xs">
                 T
               </div>
-              <span className="font-bold text-lg text-gray-900">TaxFlow</span>
+              <span className="font-bold text-lg text-gray-900">TaxEase</span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
               Modern tax filing for the digital age. Fast, secure, and

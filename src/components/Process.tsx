@@ -8,18 +8,18 @@ const steps = [{
   icon: UploadCloud
 }, {
   id: 2,
-  title: 'AI Analysis',
-  description: 'Our system instantly categorizes and scans for potential deductions.',
+  title: 'Systematic Analysis',
+  description: 'Our system analyze categorizes, flags potential tax related issues for review.',
   icon: Bot
 }, {
   id: 3,
   title: 'Expert Review',
-  description: 'A certified CPA verifies every detail to ensure 100% accuracy.',
+  description: 'A certified CPA checks every detail to ensure accuracy and compliance.',
   icon: CheckCircle2
 }, {
   id: 4,
   title: 'File & Relax',
-  description: 'We file your return electronically and you get your refund fast.',
+  description: 'We file your return promptly while optimizing your overall tax position',
   icon: Send
 }];
 export function Process() {
