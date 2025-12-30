@@ -39,28 +39,29 @@ export default function ServicesPage() {
     ]
 
   }];
-  const pricing = [{
-    name: 'Personal Tax',
-    price: '60$',
-    description: 'Starting From',
-    features: ['Federal & State Filing', 'Standard Deduction', 'W-2 Import', 'Email Support'],
-    cta: 'Start Free',
-    highlight: false
-  }, {
-    name: 'Corporate Tax',
-    price: '$150',
-    description: 'Starting From',
-    features: ['Itemized Deductions', 'Investment Income', 'Rental Property', 'Priority Chat Support', 'Audit Assistance'],
-    cta: 'Get Started',
-    highlight: true
-  }, {
-    name: 'Book keeping',
-    price: '$50',
-    description: 'For freelancers and business owners',
-    features: ['Business Income (Sch C)', 'Self-Employment Tax', 'Quarterly Estimates', 'Dedicated CPA Review', 'Year-round Planning'],
-    cta: 'Contact Sales',
-    highlight: false
-  }];
+  // const pricing = [{
+  //   name: 'Personal Tax',
+  //   price: '60$',
+  //   description: 'Starting From',
+  //   features: ['Federal & State Filing', 'Standard Deduction', 'W-2 Import', 'Email Support'],
+  //   cta: 'Start Free',
+  //   highlight: false
+  // },
+  //  {
+  //   name: 'Corporate Tax',
+  //   price: '$150',
+  //   description: 'Starting From',
+  //   features: ['Itemized Deductions', 'Investment Income', 'Rental Property', 'Priority Chat Support', 'Audit Assistance'],
+  //   cta: 'Get Started',
+  //   highlight: true
+  // }, {
+  //   name: 'Book keeping',
+  //   price: '$50',
+  //   description: 'For freelancers and business owners',
+  //   features: ['Business Income (Sch C)', 'Self-Employment Tax', 'Quarterly Estimates', 'Dedicated CPA Review', 'Year-round Planning'],
+  //   cta: 'Contact Sales',
+  //   highlight: false
+  // }];
   return <div className="min-h-screen bg-white flex flex-col font-sans text-gray-900">
     <Navigation />
 
@@ -80,14 +81,13 @@ export default function ServicesPage() {
             and tax professionals has you covered.
           </p>
         </div>
-      </section>   
+      </section>
 
       {/* Detailed Services Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => <div key={index}  className={`bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow ${
-      index === 2 ? 'md:col-span-2' : ''
-    }`}>
+          {services.map((service, index) => <div key={index} className={`bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow ${index === 2 ? 'md:col-span-2' : ''
+            }`}>
             <div className="bg-cyan-50 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
               {service.icon}
 
@@ -109,7 +109,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="bg-gray-50 py-24">
+      {/* <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -132,7 +132,6 @@ export default function ServicesPage() {
                 <span className="text-4xl font-bold text-gray-900">
                   {tier.price}
                 </span>
-                {/* {tier.price !== 'Free' && <span className="text-gray-500 ml-1">/return</span>} */}
               </div>
               <p className="text-gray-600 text-sm mb-8">
                 {tier.description}
@@ -151,7 +150,7 @@ export default function ServicesPage() {
             </div>)}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8 text-center">

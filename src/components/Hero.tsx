@@ -28,9 +28,9 @@ export function Hero() {
               Start Filing Free
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </button>
-            <button className="inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-medium text-gray-600 transition-colors hover:text-gray-900 hover:bg-gray-50">
+            {/* <button className="inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-medium text-gray-600 transition-colors hover:text-gray-900 hover:bg-gray-50">
               How it works
-            </button>
+            </button> */}
           </div>
 
           {/* <div className="mt-16 flex items-center justify-center lg:justify-start gap-8 text-gray-400 grayscale opacity-60">
