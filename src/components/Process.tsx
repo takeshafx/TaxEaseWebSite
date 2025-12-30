@@ -9,17 +9,17 @@ const steps = [{
 }, {
   id: 2,
   title: 'Systematic Analysis',
-  description: 'Our system analyze categorizes, flags potential tax related issues for review.',
+  description: 'Your information is automatically analyzed, categorized, and flagged by our built in AI system.',
   icon: Bot
 }, {
   id: 3,
   title: 'Expert Review',
-  description: 'A certified CPA checks every detail to ensure accuracy and compliance.',
+  description: 'Every detail is carefully reviewed by a CPA to ensure full accuracy and compliance',
   icon: CheckCircle2
 }, {
   id: 4,
   title: 'File & Relax',
-  description: 'We file your return promptly while optimizing your overall tax position',
+  description: 'Your return is filed promptly while you sit back and relax.',
   icon: Send
 }];
 export function Process() {

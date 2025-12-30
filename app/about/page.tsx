@@ -20,13 +20,13 @@ export default function AboutPage() {
   }];
   const team = [{
     name: 'Vishaka Sewwandi',
-    role: 'Founder & Lead CPA',
-    bio: 'Former Big 4 senior manager with 6 years of tax strategy experience.',
+    role: 'Founder & Lead ACA',
+    bio: 'Former Big 4 senior manager with 6 years of experience in accounting, tax, and assurance.',
     image: '/images/vishaka_profile.png'
   }, {
     name: 'Bhadra Hemamali',
-    role: 'Head of Tax Operations',
-    bio: 'Specializes in small business taxation and complex entity structures.',
+    role: 'Senior Manager – Advisory Services',
+    bio: 'SSpecializes in M&A advisory, business valuations, financial due diligence, and financial modelling',
     image: '/images/Bhadra_profile.png'
   }, {
     name: 'Hashan Perera',
@@ -40,7 +40,7 @@ export default function AboutPage() {
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=400'
   }];
   const testimonials = [{
-    text: 'TaxFlow made filing my business taxes incredibly easy. I saved hours of work and got a bigger refund than I expected.',
+    text: 'TaxEase made filing my business taxes incredibly easy. I saved hours of work and got a bigger refund than I expected.',
     author: 'James Wilson',
     role: 'Small Business Owner',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100'
@@ -67,7 +67,7 @@ export default function AboutPage() {
               <span className="text-cyan-600">taxes.</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-12">
-              TaxFlow was founded on a simple premise: tax season shouldn't be
+              Taxease was founded on a simple premise: tax season shouldn't be
               the most stressful time of the year. We combine human expertise
               with modern technology to deliver a seamless experience.
             </p>
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
               <div className="p-8 md:p-12 text-white">
                 <h3 className="text-2xl font-bold mb-2">
-                  Headquartered in New York
+                  Headquartered in Vancouver
                 </h3>
                 <p className="text-white/80">
                   Serving clients nationwide with a team of dedicated

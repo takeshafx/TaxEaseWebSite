@@ -32,8 +32,7 @@ export function DigitalTools() {
             <span className="text-cyan-400">digital workflow.</span>
           </h2>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-            We’ve redesigned the tax experience to be smooth, intuitive, and fully online no clunky portals or paperwork hassles, just efficient financial management from start to finish.
-          </p>
+            We’ve redesigned the tax and accounting experience to be smooth, intuitive, and fully online without clunky portals or paperwork hassles.    </p>
 
           <div className="space-y-6">
             {features.map(feature => <div key={feature.name} className="flex items-start">
@@ -72,7 +71,7 @@ export function DigitalTools() {
                     <div className="h-8 w-8 rounded bg-green-500/20 flex items-center justify-center text-green-400">
                       <Check className="h-4 w-4" />
                     </div>
-                    <div className="text-sm text-gray-300">W-2 Uploaded</div>
+                    <div className="text-sm text-gray-300">Client’s Documents Submission — Completed</div>
                   </div>
                   <span className="text-xs text-gray-500">Just now</span>
                 </div>
@@ -83,7 +82,7 @@ export function DigitalTools() {
                       <RefreshCw className="h-4 w-4 animate-spin-slow" />
                     </div>
                     <div className="text-sm text-gray-300">
-                      Analyzing Deductions
+                      Documents Verification and Approval
                     </div>
                   </div>
                   <span className="text-xs text-gray-500">Processing...</span>

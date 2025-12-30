@@ -2,15 +2,30 @@
 
 import { Navigation } from '../../src/components/Navigation';
 import { Footer } from '../../src/components/Footer';
-import { Check, FileText, Briefcase, TrendingUp, ArrowRight } from 'lucide-react';
+import { Check, FileText, Briefcase, TrendingUp, ArrowRight, NotebookPen } from 'lucide-react';
 
 export default function ServicesPage() {
   const services = [{
     icon: <FileText className="h-6 w-6 text-cyan-500" />,
     title: 'Individual Tax Filing',
-    description: 'Comprehensive tax return preparation for individuals and families. We handle W-2s, 1099s, investments, and more.',
+    description: 'Comprehensive tax return preparation for individuals and families.',
     features: ['Individual Accounting and Personal Tax Returns (T1)', 'Rental Income Reporting (T776)', 'Self Employment Business Income (T2125)',
       'CRA Correspondence, Audit Support, and Review Assistance', 'Personal GST/HST Filings', 'Personal Tax Planning and Strategies (RRSP, TFSA, Dividend vs. Salary)']
+  },
+  {
+    icon: <Briefcase className="h-6 w-6 text-cyan-500 md:col-span-2" />,
+    title: 'Corporate Accounting and Taxes',
+    description: 'Affordable tax solutions for freelancers, self employed individuals, and corporations. Stay compliant while maximizing your business deductions.',
+    features: [
+      'Compilation Financial Statements & Year End Engagements',
+      'Corporate Tax Filings, Including All Related Corporate Tax Forms (T2)',
+      'Year End Corporate Tax Planning & Strategies (Dividend vs. Salary)',
+      'Payroll Services (T4s, WCB, ROEs)',
+      'Government Remittances & Filings (GST/HST, PST, EHT)',
+      'Budgeting, Forecasting & Management Reporting',
+      'Partnership Tax Filing (T5013)'
+    ]
+
   }, {
     icon: <TrendingUp className="h-6 w-6 text-cyan-500" />,
     title: 'CRA Reviews & Audits',
@@ -22,23 +37,22 @@ export default function ServicesPage() {
       'Communicating with CRA on behalf of clients',
       'Preparing adjustments (T1 ADJ, T2 amendments)'
     ]
-  }, {
-    icon: <Briefcase className="h-6 w-6 text-cyan-500 md:col-span-2" />,
-    title: 'Corporate Accounting and Taxes',
-    description: 'Expert tax solutions for freelancers, LLCs, and corporations. Stay compliant while maximizing your business deductions.',
-    features: [
-      'Compilation Financial Statements & Year End Engagements',
-      'Corporate Tax Filings, Including All Related Corporate Tax Forms (T2, T5, T1134, T1135)',
-      'Year End Corporate Tax Planning & Strategies (Dividend vs. Salary)',
-      'Bookkeeping Services (QuickBooks Online, QuickBooks Desktop, and Sage)',
-      'Payroll Services (T4s, WCB, ROEs)',
-      'Government Remittances & Filings (GST/HST, PST, EHT)',
-      'CRA Correspondence & Support',
-      'Budgeting, Forecasting & Management Reporting',
-      'Additional Filings — Partnerships (T5013)'
-    ]
+  },
 
-  }];
+  {
+    icon: <NotebookPen className="h-6 w-6 text-cyan-500" />,
+    title: 'Bookkeeping Services',
+    description: "Bookkeeping service provide with QuickBooks Online, and Sage.",
+    features: [
+      'Recording all financial transactions and completing bank and credit card reconciliations',
+      'Managing accounts receivable and accounts payable on regular basis.',
+      'Monthly payroll processing',
+      'Sales tax tracking and periodic return filing (GST/HST, PST)',
+      'Monthly financial reporting (income statement, balance sheet, trial balance)'
+    ]
+  },
+
+  ];
   // const pricing = [{
   //   name: 'Personal Tax',
   //   price: '60$',
@@ -86,8 +100,7 @@ export default function ServicesPage() {
       {/* Detailed Services Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => <div key={index} className={`bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow ${index === 2 ? 'md:col-span-2' : ''
-            }`}>
+          {services.map((service, index) => <div key={index} className={`bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow`}>
             <div className="bg-cyan-50 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
               {service.icon}
 
