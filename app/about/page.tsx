@@ -26,18 +26,13 @@ export default function AboutPage() {
   }, {
     name: 'Bhadra Hemamali',
     role: 'Senior Manager – Advisory Services',
-    bio: 'SSpecializes in M&A advisory, business valuations, financial due diligence, and financial modelling',
+    bio: 'Specializes in M&A advisory, business valuations, financial due diligence, and financial modelling',
     image: '/images/Bhadra_profile.png'
   }, {
-    name: 'Hashan Perera',
+    name: 'Hashan Fernando',
     role: 'Client Success Director',
     bio: 'Ensures every client receives personalized attention and support.',
     image: '/images/hashan_profile.png'
-  }, {
-    name: 'David Park',
-    role: 'Senior Tax Analyst',
-    bio: 'Expert in international tax law and expatriate filing requirements.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=400'
   }];
   const testimonials = [{
     text: 'TaxEase made filing my business taxes incredibly easy. I saved hours of work and got a bigger refund than I expected.',
@@ -109,8 +104,8 @@ export default function AboutPage() {
         {/* Values Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-cyan-600">
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mb-6 text-cyan-600">
                 <Award className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4">Expertise First</h3>
@@ -120,8 +115,8 @@ export default function AboutPage() {
                 expertise.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-cyan-600">
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mb-6 text-cyan-600">
                 <ShieldCheck className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4">Bank-Level Security</h3>
@@ -130,8 +125,8 @@ export default function AboutPage() {
                 portals. We treat your privacy with the highest priority.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-cyan-600">
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mb-6 text-cyan-600">
                 <Clock className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4">Always Available</h3>
@@ -153,7 +148,7 @@ export default function AboutPage() {
               <p className="text-gray-600">The people behind the platform.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {team.map((member, index) => <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center group hover:-translate-y-1 transition-transform duration-300">
                   <div className="w-32 h-32 mx-auto mb-6 relative">
                     <div className="absolute inset-0 bg-cyan-500 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300 scale-110"></div>

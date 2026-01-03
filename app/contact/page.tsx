@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Navigation } from '../../src/components/Navigation';
 import { Footer } from '../../src/components/Footer';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, X } from 'lucide-react';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -14,11 +14,39 @@ export default function ContactPage() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formState);
-    alert('Thanks for contacting us! We will get back to you shortly.');
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState),
+      });
+
+      if (response.ok) {
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+        setFormState({
+          name: '',
+          email: '',
+          phone: '',
+          service: 'individual',
+          message: ''
+        });
+      } else {
+        alert('Something went wrong. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error sending message.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -95,9 +123,13 @@ export default function ContactPage() {
                 <textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all resize-none" placeholder="How can we help you?" required></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-cyan-500 text-white font-semibold py-4 rounded-lg hover:bg-cyan-600 transition-all shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
-                Send Message
-                <Send className="h-4 w-4" />
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-cyan-500 text-white font-semibold py-4 rounded-lg hover:bg-cyan-600 transition-all shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {!isSubmitting && <Send className="h-4 w-4" />}
               </button>
             </form>
           </div>
@@ -150,17 +182,36 @@ export default function ContactPage() {
             </div>
 
             {/* Map Placeholder */}
-            <div className="bg-gray-100 rounded-2xl h-64 w-full flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
-              <div className="relative z-10 text-gray-500 font-medium flex flex-col items-center">
-                <MapPin className="h-8 w-8 mb-2 text-gray-400" />
-                <span>Interactive Map Loading...</span>
-              </div>
+            <div className="bg-gray-100 rounded-2xl h-64 w-full overflow-hidden shadow-sm border border-gray-100">
+              <iframe
+                src="https://maps.google.com/maps?q=13618+100+Ave,+Surrey,+BC+V3T+0A8&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="Office Location"
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    {showToast && (
+      <div className="fixed bottom-8 right-8 z-50 bg-white border-l-4 border-cyan-500 shadow-2xl rounded-lg p-6 flex items-start gap-4 max-w-md">
+        <div className="text-cyan-500 mt-0.5">
+          <CheckCircle className="h-6 w-6" />
+        </div>
+        <div className="flex-1">
+          <h3 className="font-bold text-gray-900">Message Sent!</h3>
+          <p className="text-gray-600 text-sm mt-1">Thanks for reaching out. We'll get back to you shortly.</p>
+        </div>
+        <button onClick={() => setShowToast(false)} className="text-gray-400 hover:text-gray-600 transition-colors">
+          <X className="h-5 w-5" />
+        </button>
+      </div>
+    )}
 
     <Footer />
   </div>;

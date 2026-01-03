@@ -44,9 +44,9 @@ export function Navigation() {
           <Link href="/contact" className={`${isActive('/contact')} transition-colors`}>
             Contact
           </Link>
-          <button className="text-cyan-600 hover:text-cyan-700 transition-colors font-medium">
+          {/* <button className="text-cyan-600 hover:text-cyan-700 transition-colors font-medium">
             Log in
-          </button>
+          </button> */}
           <Link href="/contact" className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
             Get Started
           </Link>
@@ -77,9 +77,9 @@ export function Navigation() {
           Contact
         </Link>
         <div className="pt-4 flex flex-col gap-3">
-          <button className="w-full text-center text-cyan-600 font-medium py-2">
+          {/* <button className="w-full text-center text-cyan-600 font-medium py-2">
             Log in
-          </button>
+          </button> */}
           <Link href="/contact" className="w-full bg-gray-900 text-white px-4 py-3 rounded-lg text-center font-medium hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
             Get Started
           </Link>

@@ -114,10 +114,12 @@ export function Footer() {
           <a href="#" className="hover:text-gray-900 transition-colors">
             Terms
           </a>
-          <a href="#" className="hover:text-gray-900 transition-colors">
-            Twitter
+          <a href="https://www.facebook.com/profile.php?id=61585656848868" className="hover:text-gray-900 transition-colors" target="_blank"
+            rel="noopener noreferrer">
+            Facebook
           </a>
-          <a href="#" className="hover:text-gray-900 transition-colors">
+          <a href="https://www.linkedin.com/company/97433201/admin/dashboard/" className="hover:text-gray-900 transition-colors" target="_blank"
+            rel="noopener noreferrer">
             LinkedIn
           </a>
         </div>
