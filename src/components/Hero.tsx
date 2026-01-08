@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 export function Hero() {
   return <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-16 overflow-hidden bg-white">
     <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-50 via-white to-white opacity-70"></div>
@@ -17,17 +18,17 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-8 leading-[1.1]">
             Tax filing for the <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-600">
-              Everyone              </span>
+              Everyone 2026             </span>
           </h1>
 
           <p className="mt-6 text-xl text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
             Skip paperwork and office visits, expert CPAs handle online tax filing for freelancers, self-employed individuals, and private limited companies. Fast, secure, and on time.          </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-            <button className="group inline-flex items-center justify-center rounded-lg bg-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-cyan-600 hover:shadow-lg hover:shadow-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2">
+            <Link href="/contact" className="group inline-flex items-center justify-center rounded-lg bg-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-cyan-600 hover:shadow-lg hover:shadow-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2">
               Start Filing Free
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
             {/* <button className="inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-medium text-gray-600 transition-colors hover:text-gray-900 hover:bg-gray-50">
               How it works
             </button> */}
