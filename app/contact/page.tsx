@@ -4,6 +4,12 @@ import { useState } from 'react';
 import { Navigation } from '../../src/components/Navigation';
 import { Footer } from '../../src/components/Footer';
 import { Mail, Phone, MapPin, Send, CheckCircle, X } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: 'Get in touch with TaxEase Web Service for any inquiries or to get started with our services.',
+};
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({

@@ -1,8 +1,13 @@
-'use client';
-
 import { Navigation } from '../../src/components/Navigation';
 import { Footer } from '../../src/components/Footer';
 import { Award, ShieldCheck, Clock, Quote } from 'lucide-react';
+import { Metadata } from 'next';
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn more about TaxEase Web Service and our team of expert tax professionals.',
+};
 
 export default function AboutPage() {
   const stats = [{
@@ -22,7 +27,7 @@ export default function AboutPage() {
     name: 'Vishaka Sewwandi',
     role: 'Founder & Lead ACA',
     bio: 'Former Big 4 senior manager with 6 years of experience in accounting, tax, and assurance.',
-    image: '/images/vishaka_profile.png'
+    image: '/images/Vishaka_profile.png'
   }, {
     name: 'Bhadra Hemamali',
     role: 'Senior Manager – Advisory Services',
@@ -32,7 +37,7 @@ export default function AboutPage() {
     name: 'Hashan Fernando',
     role: 'Client Success Director',
     bio: 'Ensures every client receives personalized attention and support.',
-    image: '/images/hashan_profile.png'
+    image: '/images/Hashan_profile.png'
   }];
   const testimonials = [{
     text: 'TaxEase made filing my business taxes incredibly easy. I saved hours of work and got a bigger refund than I expected.',
@@ -70,7 +75,7 @@ export default function AboutPage() {
 
           {/* Office Image */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[500px]">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Modern TaxFlow office" className="w-full h-full object-cover" />
+            <Image src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Modern TaxFlow office" layout="fill" objectFit="cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
               <div className="p-8 md:p-12 text-white">
                 <h3 className="text-2xl font-bold mb-2">
@@ -152,7 +157,7 @@ export default function AboutPage() {
               {team.map((member, index) => <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center group hover:-translate-y-1 transition-transform duration-300">
                   <div className="w-32 h-32 mx-auto mb-6 relative">
                     <div className="absolute inset-0 bg-cyan-500 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300 scale-110"></div>
-                    <img src={member.image} alt={member.name} className="w-full h-full object-cover rounded-full border-4 border-white shadow-md" />
+                    <Image src={member.image} alt={member.name} width={128} height={128} className="w-full h-full object-cover rounded-full border-4 border-white shadow-md" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-1">
                     {member.name}
@@ -180,7 +185,7 @@ export default function AboutPage() {
                   "{testimonial.text}"
                 </p>
                 <div className="flex items-center gap-4 border-t border-gray-50 pt-6">
-                  <img src={testimonial.image} alt={testimonial.author} className="w-12 h-12 rounded-full object-cover" />
+                  <Image src={testimonial.image} alt={testimonial.author} width={48} height={48} className="w-12 h-12 rounded-full object-cover" />
                   <div>
                     <p className="font-bold text-gray-900 text-sm">
                       {testimonial.author}

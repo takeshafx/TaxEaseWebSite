@@ -114,7 +114,7 @@ export function Footer() {
           <a href="#" className="hover:text-gray-900 transition-colors">
             Terms
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61585656848868" className="hover:text-gray-900 transition-colors" target="_blank"
+          <a href="https://www.facebook.com/profile.php?id=61586101416353" className="hover:text-gray-900 transition-colors" target="_blank"
             rel="noopener noreferrer">
             Facebook
           </a>

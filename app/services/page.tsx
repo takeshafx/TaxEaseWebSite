@@ -1,8 +1,13 @@
-'use client';
-
 import { Navigation } from '../../src/components/Navigation';
 import { Footer } from '../../src/components/Footer';
 import { Check, FileText, Briefcase, TrendingUp, ArrowRight, NotebookPen } from 'lucide-react';
+import { Metadata } from 'next';
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Our Services',
+  description: 'Explore the expert tax and accounting services offered by TaxEase Web Service.',
+};
 
 export default function ServicesPage() {
   const services = [{
@@ -83,7 +88,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden mb-16">
         <div className="absolute inset-0 bg-cyan-900/5 z-0"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-5"></div>
+        <Image src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2000&q=80" alt="Tax Services" layout="fill" objectFit="cover" className="opacity-5" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
