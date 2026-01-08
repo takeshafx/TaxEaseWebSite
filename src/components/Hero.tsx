@@ -18,7 +18,7 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-8 leading-[1.1]">
             Tax filing for the <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-600">
-              Everyone 2026             </span>
+              Everyone              </span>
           </h1>
 
           <p className="mt-6 text-xl text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
