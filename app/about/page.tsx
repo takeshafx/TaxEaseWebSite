@@ -27,17 +27,17 @@ export default function AboutPage() {
     name: 'Vishaka Sewwandi',
     role: 'Founder & Lead ACA',
     bio: 'Former Big 4 senior manager with 6 years of experience in accounting, tax, and assurance.',
-    image: '/images/Vishaka_profile.png'
+    image: '/images/vishaka_profile.png'
   }, {
     name: 'Bhadra Hemamali',
     role: 'Senior Manager – Advisory Services',
     bio: 'Specializes in M&A advisory, business valuations, financial due diligence, and financial modelling',
-    image: '/images/Bhadra_profile.png'
+    image: '/images/bhadra_profile.png'
   }, {
     name: 'Hashan Fernando',
     role: 'Client Success Director',
     bio: 'Ensures every client receives personalized attention and support.',
-    image: '/images/Hashan_profile.png'
+    image: '/images/hashan_profile.png'
   }];
   const testimonials = [{
     text: 'TaxEase made filing my business taxes incredibly easy. I saved hours of work and got a bigger refund than I expected.',
